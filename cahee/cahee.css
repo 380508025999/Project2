@@ -2,6 +2,10 @@
 body{
     width: 100%;
 }
+@media screen and (max-width: 1920px){
+
+}
+
 .relative{
     display: flex;
     width: 100%;
@@ -34,19 +38,15 @@ p{
 
     margin-left: 350px;
 }
-.child1{
-    width: 770px;
-    height: 556px;
+.child1 {
+    height: 56%;
     flex-basis: 56.67%;
-    background: url("img1.png") no-repeat;
-
+    background: url(img1.png) no-repeat;
     margin-top: 5%;
     margin-left: 6.5%;
 }
-
 .child2-first{
-    width:370px;
-    height:264px;
+
     flex-basis: 26.6%;
     margin: 1.5%;
     background: url("img2.png") no-repeat;
@@ -56,35 +56,31 @@ p{
 
 }
 .child2-last{
-    width: 370px;
-    height: 264px;
     flex-basis: 26.6%;
     margin: 1.5%;
     background: url(img3.png) no-repeat;
     box-sizing: border-box;
-    margin-top: -25.4%;
+    margin-top: -47.7%;
     margin-left: 64.7%;
 }
 .child3-first{
-    width: 570px;
-    height: 402px;
+
     flex-basis: 75%;
     margin: 1.5%;
     background: url(img4.png) no-repeat;
     box-sizing: border-box;
     margin-left: 6.9%;
-    margin-top: -9.8%;
+    margin-top: -32.4%;
 }
+
 .child3-last{
-    top: -25%;
-    width: 570px;
-    height: 402px;
     flex-basis: 40%;
     margin: 1.5%;
     background: url(img5.png) no-repeat;
     box-sizing: border-box;
-    margin-left: 51.9%;
-    margin-top: -37.3%;
+    margin-left: 51.5%;
+    margin-top: -38%;
+
 }
 button{
     position: absolute;
