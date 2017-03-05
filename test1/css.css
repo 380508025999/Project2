@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,400|Raleway:700");
+header {
+  width: 100%;
+  height: 598px;
+  background: url("img1.png") 100% no-repeat;
+  background-size: cover;
+  color: white; }
+  header .header-inner {
+    width: 1100px;
+    margin: 0 auto; }
+  header .header-logo {
+    position: absolute;
+    margin-left: 215px;
+    margin-top: 4%; }
+  header ul {
+    list-style-type: none;
+    display: inline-block;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    margin-top: 4%; }
+  header .header-menu1 {
+    position: absolute;
+    display: inline-block;
+    float: right;
+    margin-left: 48%; }
+  header .header-menu2 {
+    position: absolute;
+    display: inline-block;
+    float: right;
+    margin-left: 52.5%; }
+  header .header-menu3 {
+    position: absolute;
+    display: inline-block;
+    float: right;
+    margin-left: 58.5%; }
+  header .header-menu4 {
+    position: absolute;
+    display: inline-block;
+    float: right;
+    margin-left: 65%; }
+  header .header-menu5 {
+    position: absolute;
+    display: inline-block;
+    float: right;
+    margin-left: 72%; }
+  header .header-text1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 9%; }
+  header .header-logo2 {
+    position: absolute;
+    margin-left: 45%; }
+  header .header-text2 {
+    position: absolute;
+    font-family: "Lato", sans-serif;
+    font-size: 22px;
+    margin-top: 4%;
+    margin-left: 15%; }
+  header button {
+    background: none;
+    border: none;
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 15%; }
+
+main {
+  width: 100%;
+  height: 735px; }
+  main .main_block-child {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 23%;
+    text-align: center;
+    color: #222222; }
+    main .main_block-child h4 {
+      font-size: 24px;
+      font-family: "Lato", sans-serif; }
+    main .main_block-child p {
+      font-size: 14px;
+      font-family: "Lato", sans-serif; }
+    main .main_block-child .main_block-child1 {
+      width: 20%;
+      height: 387px; }
+    main .main_block-child .main_block-child2 {
+      width: 20%;
+      height: 387px; }
+    main .main_block-child .main_block-child3 {
+      width: 20%;
+      height: 387px; }
+  main h1 {
+    position: absolute;
+    margin-left: 40%;
+    margin-top: -14%;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 35px; }
+  main .header-logo2 {
+    position: absolute;
+    margin-left: 45%;
+    margin-top: -7%; }
+
+section {
+  color: white;
+  font-family: "Lato", sans-serif; }
+  section .section_info {
+    width: 100%;
+    margin-top: -25%;
+    height: 507px;
+    background: url(fon2.png) 100% no-repeat;
+    background-size: cover; }
+  section img {
+    position: absolute;
+    margin-left: 68%;
+    margin-top: 6%; }
+  section .section_info-text {
+    width: 40%;
+    margin-left: 10%;
+    top: 372%;
+    position: absolute; }
+    section .section_info-text h1 {
+      font-size: 36.08px;
+      font-weight: 400; }
+    section .section_info-text p {
+      font-weight: 100;
+      font-size: 21px; }
+    section .section_info-text button {
+      width: 5%;
+      height: 26%;
+      background: none;
+      border: none;
+      color: #f4f4f6;
+      font-size: 14px;
+      position: absolute;
+      margin-top: 11%; }
+      section .section_info-text button:hover {
+        text-decoration: underline;
+        color: #f4f4f6; }
+
+aside {
+  width: 100%;
+  height: 735px; }
+  aside h1 {
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 7%;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 35px; }
+  aside .header-logo2 {
+    position: absolute;
+    margin-left: 44%;
+    margin-top: 14%; }
+  aside .aside-block {
+    width: 1170px;
+    height: 423px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 23%;
+    margin-left: 6%; }
+    aside .aside-block .aside-block-child {
+      width: 371px;
+      height: 420px; }
+  aside button {
+    position: absolute;
+    margin-top: 62%;
+    margin-left: 36%;
+    width: 370px;
+    height: 60px;
+    background: none;
+    border: 2px solid #222222;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Lato", sans-serif; }
+
+/*# sourceMappingURL=css.css.map */

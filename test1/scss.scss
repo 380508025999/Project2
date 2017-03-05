@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400|Raleway:700');
+$color1:#f4f4f6;
+$color2:white;
+$colo3:#222222;
+$font-family1:  'Lato', sans-serif;
+$font-family2:  'Raleway', sans-serif;
+header{
+  width: 100%;
+
+  height: 598px;
+  background: url("img1.png")100% no-repeat;
+  background-size: cover;
+  color: $color2;
+  .header-inner{
+ width: 1100px;
+    margin: 0 auto;
+
+  }
+  .header-logo{
+    position: absolute;
+    margin-left: 215px;
+    margin-top: 4%;
+  }
+  & ul{
+
+    list-style-type: none;
+    display: inline-block;
+
+    font-family: $font-family1;
+    font-size: 14px;
+    margin-top: 4%;
+
+
+  }
+  .header-menu1{
+    position: absolute;
+    display: inline-block;
+    float: right;
+    margin-left: 48%;
+  }
+  .header-menu2{
+    position: absolute;
+    display: inline-block;
+    float: right;
+    margin-left: 52.5%;
+  }
+  .header-menu3{
+    position: absolute;
+    display: inline-block;
+    float: right;
+    margin-left: 58.5%;
+  }
+  .header-menu4{
+    position: absolute;
+    display: inline-block;
+    float: right;
+    margin-left: 65%;
+  }
+  .header-menu5{
+    position: absolute;
+    display: inline-block;
+    float: right;
+    margin-left: 72%;
+  }
+
+  .header-text1{
+    font-family: $font-family2;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 9%;
+  }
+
+  .header-logo2{
+    position: absolute;
+
+    margin-left: 45%;}
+  .header-text2{
+    position: absolute;
+    font-family: "Lato", sans-serif;
+    font-size: 22px;
+    margin-top: 4%;
+    margin-left: 15%;
+  }
+  & button{
+    background: none;
+    border: none;
+    position: absolute;
+    margin-left: 45%;
+
+    margin-top: 15%;
+  }
+}
+main{
+  width: 100%;
+  height: 735px;
+  .main_block-child {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 23%;
+    text-align: center;
+    color: $colo3;
+    & h4{
+    font-size: 24px;
+      font-family: $font-family1;}
+    & p{
+      font-size: 14px;
+      font-family: $font-family1;
+    }
+    .main_block-child1{
+      width: 20%;
+      height: 387px;
+
+
+      }
+
+    .main_block-child2{
+      width: 20%;
+      height: 387px;
+    }
+    .main_block-child3{
+      width: 20%;
+      height: 387px;
+    }
+  }
+
+  & h1{
+    position: absolute;
+    margin-left: 40%;
+    margin-top: -14%;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+  }
+  .header-logo2{
+    position: absolute;
+    margin-left: 45%;
+    margin-top: -7%;
+   }
+
+}
+section {
+  color: $color2;
+  font-family: $font-family1;
+  .section_info {
+    width: 100%;
+    margin-top: -25%;
+    height: 507px;
+    background: url(fon2.png) 100% no-repeat;
+    background-size: cover;
+  }
+  & img {
+    position: absolute;
+    margin-left: 68%;
+    margin-top: 6%;
+
+  }
+  .section_info-text {
+    width: 40%;
+    margin-left: 10%;
+    top: 372%;
+    position: absolute;
+
+    & h1 {
+      font-size: 36.08px;
+      font-weight: 400;
+    }
+    & p {
+      font-weight: 100;
+      font-size: 21px;
+    }
+    & button {
+      width: 5%;
+      height: 26%;
+      background: none;
+      border: none;
+      color: #f4f4f6;
+      font-size: 14px;
+      position: absolute;
+      margin-top: 11%;
+      &:hover {
+        text-decoration: underline;
+        color: $color1;
+      }
+    }
+  }
+}
+    aside {
+      width: 100%;
+      height: 735px;
+      & h1 {
+        position: absolute;
+        margin-left: 40%;
+        margin-top: 7%;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 35px;
+      }
+      .header-logo2 {
+        position: absolute;
+        margin-left: 44%;
+        margin-top: 14%;
+      }
+      .aside-block{
+        width: 1170px;
+        height: 423px;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        margin-top: 23%;
+        margin-left: 6%;
+        .aside-block-child{
+          width: 371px;
+          height: 420px;
+        }
+      }
+      & button{
+        position: absolute;
+        margin-top: 62%;
+        margin-left: 36%;
+        width: 370px;
+        height: 60px;
+        background: none;
+        border: 2px solid #222222;
+        text-align: center;
+        font-size: 24px;
+        font-family: $font-family1;
+      }
+      }
+
+
