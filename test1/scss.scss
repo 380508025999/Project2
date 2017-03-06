@@ -4,6 +4,7 @@ $color2:white;
 $colo3:#222222;
 $font-family1:  'Lato', sans-serif;
 $font-family2:  'Raleway', sans-serif;
+
 header{
   width: 100%;
 
@@ -11,11 +12,7 @@ header{
   background: url("img1.png")100% no-repeat;
   background-size: cover;
   color: $color2;
-  .header-inner{
- width: 1100px;
-    margin: 0 auto;
 
-  }
   .header-logo{
     position: absolute;
     margin-left: 215px;
@@ -29,8 +26,12 @@ header{
     font-family: $font-family1;
     font-size: 14px;
     margin-top: 4%;
-
-
+  }
+  .header-link{
+    &:hover{
+      text-decoration: underline;
+      color: $color1;
+    }
   }
   .header-menu1{
     position: absolute;
@@ -80,7 +81,15 @@ header{
     font-family: "Lato", sans-serif;
     font-size: 22px;
     margin-top: 4%;
-    margin-left: 15%;
+    margin-left: 28%;
+  }
+  .header-text3{
+    position: absolute;
+    font-family: "Lato", sans-serif;
+    font-size: 22px;
+    margin-top: 6%;
+    margin-left: 30%;
+
   }
   & button{
     background: none;
@@ -95,11 +104,13 @@ main{
   width: 100%;
   height: 735px;
   .main_block-child {
+    width: 75%;
     display: flex;
     justify-content: space-around;
     margin-top: 23%;
+    margin-left: 12%;
     text-align: center;
-    color: $colo3;
+    color: #222222;
     & h4{
     font-size: 24px;
       font-family: $font-family1;}
@@ -108,19 +119,21 @@ main{
       font-family: $font-family1;
     }
     .main_block-child1{
-      width: 20%;
+      width: 21%;
       height: 387px;
 
 
       }
 
     .main_block-child2{
-      width: 20%;
+      width: 21%;
       height: 387px;
+      margin-top: -1%;
     }
     .main_block-child3{
-      width: 20%;
+      width: 22%;
       height: 387px;
+      margin-top: 2%;
     }
   }
 
@@ -145,22 +158,16 @@ section {
   .section_info {
     width: 100%;
     margin-top: -25%;
-    height: 507px;
-    background: url(fon2.png) 100% no-repeat;
+    height: 417px;
+    background: url(fon4.png) 100% no-repeat;
     background-size: cover;
   }
-  & img {
-    position: absolute;
-    margin-left: 68%;
-    margin-top: 6%;
 
-  }
   .section_info-text {
     width: 40%;
-    margin-left: 10%;
-    top: 372%;
-    position: absolute;
-
+    margin-left: 15%;
+    top: 26%;
+    position: relative;
     & h1 {
       font-size: 36.08px;
       font-weight: 400;
@@ -202,13 +209,13 @@ section {
         margin-top: 14%;
       }
       .aside-block{
-        width: 1170px;
+        width: 84%;
         height: 423px;
         display: flex;
         justify-content: space-between;
         position: absolute;
         margin-top: 23%;
-        margin-left: 6%;
+        margin-left: 8%;
         .aside-block-child{
           width: 371px;
           height: 420px;
@@ -227,5 +234,79 @@ section {
         font-family: $font-family1;
       }
       }
+footer{
+  margin-top: 18%;
+  width: 100%;
+  height: 671px;
+  background: url(fon3.png) 100% no-repeat;
+  background-size: cover;
+  color: $color2;
+  font-family: $font-family1;
+  & h1 {
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 7%;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+  }
+  .header-logo2 {
+    position: absolute;
+    margin-left: 46%;
+    margin-top: 14%;
+  }
+.header-logo3{
+  position: absolute;
+  margin-top: 21%;
+  margin-left: 41%;
+
+}
+  .footer-input {
+    width:671px;
+    height: 238px;
+    position: relative;
+    top: 57%;
+    left: 25%;
+    & input {
+      border: none;
+      border-bottom-width: 2px; /* Толщина линии внизу */
+      border-bottom-style: solid; /* Стиль линии внизу */
+      border-bottom-color: white; /* Цвет линии внизу */
+      width: 304px;
+      background: transparent;
+      text-decoration: underline;
+      font-family: $font-family1;
+      color: #555555;
+      font-size: 18px;
+      font-style: italic;
+      &:focus {
+
+        color: $color2
+      }
+
+    }
+    .footer-input1{
+      float: left;
+    }
+    .footer-input2{
+      float: right;
+    }
+    .footer-input3{
+      width: 100%;
+      margin-top: 10%;
+    }
+  }
+  & button{
+    width: 188px;
+    height: 55px;
+    background: none;
+    border: 2px solid white;
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    color: white;
+    margin-top: 24%;
+    margin-left: 43%;
+  }
+}
 
 
