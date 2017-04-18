@@ -1,15 +1,10 @@
+/**
+ * Created by Елена on 18.04.2017.
+ */
 ;(function ($) {
     $(function () {
-        $('.main-main-theport_grid').isotope({
-            layoutMode: 'masonry',
-            itemSeletor: '.grid-item',
-            masonry: {
 
-                columnWidth:5,
-                gutter: 10
-            }
-        });
-        $('.main-slider-inner').slick(
+        $('.aside-slider_slider').slick(
             {
                 arrows:false, //отключить стрелочки
                 autoplay:true, //автоматически перелистівается
@@ -21,9 +16,8 @@
             }
         );
 
-
     });
-    
-    
-    
+
+
+
 })(jQuery);
