@@ -560,56 +560,59 @@ main {
         }
       }
     }
-    .slick-dots{
+    .slick-dots {
       position: absolute;
       top: 73%;
     }
   }
 
 }
-.aside-cart{
+
+.aside-cart {
   width: 100%;
-  height:726px ;
- .aside-cart-text{
-   width: 33%;
-   margin: 0 auto;
-   font-family: "Open Sans", sans-serif;
-   text-align: center;
-   position: relative;
-   top: 8%;
-   h1 {
-     font-size: 20px;
-     font-weight: 300;
-     padding: 17px;
-     letter-spacing: 3px;
-   }
-   p {
-     font-size: 14px;
-     color: #9c9fa5;
-   }
- }
+  height: 726px;
+  .aside-cart-text {
+    width: 33%;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    position: relative;
+    top: 8%;
+    h1 {
+      font-size: 20px;
+      font-weight: 300;
+      padding: 17px;
+      letter-spacing: 3px;
+    }
+    p {
+      font-size: 14px;
+      color: #9c9fa5;
+    }
+  }
 }
-#map{
+
+#map {
   height: 442px;
   margin-top: 11%;
 }
-footer{
+
+footer {
   width: 100%;
   height: 224px;
   margin-top: 7%;
-.footer-inner{
-  width: 35%;
-  margin: 0 auto;
-  text-align: center;
-}
-  .footer-text{
+  .footer-inner {
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer-text {
     font-family: $family;
     color: #9fa2a8;
     font-size: 14px;
   }
-  .footer-social{
+  .footer-social {
     margin: 10%;
-    a{
+    a {
       margin: 1%;
     }
   }
