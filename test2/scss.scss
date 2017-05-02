@@ -49,28 +49,28 @@ header {
 
 }
 
-.header-menu-one :hover {
+.header-menu-one :focus {
   border: 1px solid white;
   border-radius: 19px;
   padding: 6px;
 
 }
 
-.header-menu-two :hover {
+.header-menu-two :focus {
   border: 1px solid white;
   border-radius: 19px;
   padding: 6px;
 
 }
 
-.header-menu-tree :hover {
+.header-menu-tree :focus {
   border: 1px solid white;
   border-radius: 19px;
   padding: 6px;
 
 }
 
-.header-menu-four :hover {
+.header-menu-four :focus {
   border: 1px solid white;
   border-radius: 19px;
   padding: 6px;
@@ -441,7 +441,7 @@ main {
   border: 1px solid #19bd9a;
 }
 
-.slick-dots li button:hover {
+.slick-dots li button:focus {
   background-color: #19bd9a;
 }
 
