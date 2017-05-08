@@ -19,6 +19,21 @@
 
     });
 
+    $(function () {
 
+
+
+        $('.section-slider_slider-two').slick(
+            {
+                dots: false,
+                autoplay:true,
+                autoplaySpeed:10000,
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+
+        )
+
+    });
 
 })(jQuery);
