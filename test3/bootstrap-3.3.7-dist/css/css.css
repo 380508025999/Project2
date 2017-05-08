@@ -259,7 +259,7 @@ section {
 .section-slider_title p {
     font-family: "Proxima Nova88279", sans-serif;
     font-size: 32px;
-    color: #665f60;
+    color: white;
     margin-top: 3%;
 }
 
@@ -363,6 +363,19 @@ section {
     height: 500px;
     margin: 0 auto;
     margin-top: -8%;
+    text-align: center;
+}
+.section-slider_title2 img {
+    margin-top: 4%;
+    margin-left: 47%;
+}
+
+.section-slider_title2 p {
+    font-family: "Proxima Nova88279", sans-serif;
+    font-size: 32px;
+    color: #665f60;
+    margin-top: 3%;
+    margin-left: 39%;
 }
 .section-slider_photo{
     position: relative;
@@ -439,6 +452,165 @@ background: white;
     margin-top: 9%;
     color: #665f60;
 }
-.section-slider_slider-two .slick-prev:before,.slick-next:before{
+.section-slider_slider-two .slick-prev:before{
     color: #665f60;
+}
+.section-slider_slider-two .slick-next:before{
+    color: #665f60;
+}
+aside{
+    height:900px ;
+    margin-top: 57.5%;
+}
+#map{
+
+    height: 900px;
+    content: " ";
+    z-index: 2;
+}
+#form{
+    content: " ";
+    z-index: 4;
+    background: rgba(159, 154, 207, 0.39);
+    position: absolute;
+    width: 100%;
+    height: 900px;
+    margin-top: -66.7%;
+}
+.form-title img {
+    margin-top: 4%;
+    margin-left: 47%;
+
+}
+
+.form-title p {
+    font-family: "Proxima Nova88279", sans-serif;
+    font-size: 32px;
+    color: white;
+    margin-top: 3%;
+    margin-left: 40%;
+}
+.form-form{
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 19%;
+
+}
+.mess{
+    width: 98.6%;
+    margin-top: 3%;
+    height: 194px;
+
+    background: rgba(235, 235, 235, 0.57);
+    border: none;
+    border-radius: 5px;
+}
+.name{
+    width: 47%;
+    height: 50px;
+     background: rgba(235, 235, 235, 0.57);
+    border: none;
+    border-radius: 5px;
+}
+.mail{
+   width: 49%;
+    height: 50px;
+     background: rgba(235, 235, 235, 0.57);
+    border: none;
+    margin-left: 2%;
+    border-radius: 5px;
+}
+.name::-webkit-input-placeholder {
+    color:white;
+   left:8%;
+    position: relative;
+    font-style: italic;
+    font-family: "PtSans", sans-serif;
+    font-size: 16px;
+}
+.mail::-webkit-input-placeholder {
+    color:white;
+    left:8%;
+    position: relative;
+    font-style: italic;
+    font-family: "PtSans", sans-serif;
+    font-size: 16px;
+}
+.mess::-webkit-input-placeholder {
+    color:white;
+    left:4%;
+    top:-35%;
+    position: relative;
+    font-style: italic;
+    font-family: "PtSans", sans-serif;
+    font-size: 16px;
+}
+.name:focus::-webkit-input-placeholder{
+    color: transparent;
+}
+.mail:focus::-webkit-input-placeholder{
+    color: transparent;
+}
+.mess:focus::-webkit-input-placeholder{
+    color: transparent;
+}
+.form-button{
+    margin-top: 6%;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 7%;
+
+}
+.form-button button{
+    width: 66%;
+    height: 58px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 3px solid #8783b0;
+    background: #9f9acf;
+}
+.form-button button p{
+    font-family: "Proxima Nova",sans-serif;
+    font-size: 18px;
+    margin-top: 4%;
+}
+/*aside:active #form{*/
+     /*z-index: 0;*/
+ /*}*/
+.form-scroll{
+    width: 70px;
+    height: 70px;
+    background: rgba(179, 175, 212, 0.75);
+    float: right;
+    margin-right: 10%;
+
+}
+.form-scroll img {
+    position: relative;
+    width: 60%;
+    top: 28%;
+    left: 18%;
+}
+.form-scroll:hover{
+    background: #b3afd4;
+}
+@media screen and (min-width: 320px) and (max-width: 1024px){
+    .main-content_more{
+        margin-top: -60%;
+    }
+    .col-md-4 img {
+        margin-top: 19%;
+    }
+    #Seo{
+        margin-top: 30%;
+    }
+    section{
+        margin-top: 140%;
+    }
+    #form{
+        margin-top: -91.7%;
+    }
 }
