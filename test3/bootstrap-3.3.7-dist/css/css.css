@@ -349,13 +349,15 @@ section {
     background: white;
     color: #9f9acf;
 }
-.section-slider_two{
+
+.section-slider_two {
     width: 100%;
     height: 822px;
     background: #ebebeb;
     margin-top: 3.8%;
 }
-.section-slider_slider-two{
+
+.section-slider_slider-two {
 
     position: relative;
     width: 82%;
@@ -365,6 +367,7 @@ section {
     margin-top: -8%;
     text-align: center;
 }
+
 .section-slider_title2 img {
     margin-top: 4%;
     margin-left: 47%;
@@ -377,7 +380,8 @@ section {
     margin-top: 3%;
     margin-left: 39%;
 }
-.section-slider_photo{
+
+.section-slider_photo {
     position: relative;
     width: 260px;
     height: 258px;
@@ -389,17 +393,18 @@ section {
 
 }
 
-.section-slider_info{
+.section-slider_info {
     position: relative;
     width: 347px;
     height: 351px;
-background: white;
+    background: white;
     content: " ";
     z-index: 1;
     margin-top: -26.5%;
 
 }
-.section-slide_footer{
+
+.section-slide_footer {
     text-align: center;
     width: 100%;
     height: 67px;
@@ -409,7 +414,8 @@ background: white;
     position: absolute;
 
 }
-.slide-footer_img{
+
+.slide-footer_img {
     width: 50%;
     margin: 0 auto;
     margin-top: 4%;
@@ -417,11 +423,12 @@ background: white;
     justify-content: space-around;
 }
 
-.slide-footer_img img{
+.slide-footer_img img {
     margin-left: 3%;
 
     margin-top: 10%;
 }
+
 .section-slider_info .slider-title2 {
     font-family: "Proxima Nova", sans-serif;
     color: #9f9acf;
@@ -432,6 +439,7 @@ background: white;
     text-align: center;
     position: absolute;
 }
+
 .slider-text2 {
 
     font-family: "PtSans", sans-serif;
@@ -442,33 +450,40 @@ background: white;
     text-align: center;
     position: absolute;
 }
+
 .section-slider_slider-two .slick-next {
     margin-right: -4%;
     margin-top: 9%;
 
 }
+
 .section-slider_slider-two .slick-arrow {
     margin-left: -5%;
     margin-top: 9%;
     color: #665f60;
 }
-.section-slider_slider-two .slick-prev:before{
+
+.section-slider_slider-two .slick-prev:before {
     color: #665f60;
 }
-.section-slider_slider-two .slick-next:before{
+
+.section-slider_slider-two .slick-next:before {
     color: #665f60;
 }
-aside{
-    height:900px ;
+
+aside {
+    height: 900px;
     margin-top: 57.5%;
 }
-#map{
+
+#map {
 
     height: 900px;
     content: " ";
     z-index: 2;
 }
-#form{
+
+#form {
     content: " ";
     z-index: 4;
     background: rgba(159, 154, 207, 0.39);
@@ -477,6 +492,7 @@ aside{
     height: 900px;
     margin-top: -66.7%;
 }
+
 .form-title img {
     margin-top: 4%;
     margin-left: 47%;
@@ -490,13 +506,15 @@ aside{
     margin-top: 3%;
     margin-left: 40%;
 }
-.form-form{
+
+.form-form {
     width: 55%;
     margin: 0 auto;
     margin-top: 19%;
 
 }
-.mess{
+
+.mess {
     width: 98.6%;
     margin-top: 3%;
     height: 194px;
@@ -505,56 +523,65 @@ aside{
     border: none;
     border-radius: 5px;
 }
-.name{
+
+.name {
     width: 47%;
     height: 50px;
-     background: rgba(235, 235, 235, 0.57);
+    background: rgba(235, 235, 235, 0.57);
     border: none;
     border-radius: 5px;
 }
-.mail{
-   width: 49%;
+
+.mail {
+    width: 49%;
     height: 50px;
-     background: rgba(235, 235, 235, 0.57);
+    background: rgba(235, 235, 235, 0.57);
     border: none;
     margin-left: 2%;
     border-radius: 5px;
 }
+
 .name::-webkit-input-placeholder {
-    color:white;
-   left:8%;
+    color: white;
+    left: 8%;
     position: relative;
     font-style: italic;
     font-family: "PtSans", sans-serif;
     font-size: 16px;
 }
+
 .mail::-webkit-input-placeholder {
-    color:white;
-    left:8%;
+    color: white;
+    left: 8%;
     position: relative;
     font-style: italic;
     font-family: "PtSans", sans-serif;
     font-size: 16px;
 }
+
 .mess::-webkit-input-placeholder {
-    color:white;
-    left:4%;
-    top:-35%;
+    color: white;
+    left: 4%;
+    top: -35%;
     position: relative;
     font-style: italic;
     font-family: "PtSans", sans-serif;
     font-size: 16px;
 }
-.name:focus::-webkit-input-placeholder{
+
+.name:focus::-webkit-input-placeholder {
     color: transparent;
 }
-.mail:focus::-webkit-input-placeholder{
+
+.mail:focus::-webkit-input-placeholder {
     color: transparent;
 }
-.mess:focus::-webkit-input-placeholder{
+
+.mess:focus::-webkit-input-placeholder {
     color: transparent;
 }
-.form-button{
+
+.form-button {
     margin-top: 6%;
     width: 30%;
     margin: 0 auto;
@@ -564,7 +591,8 @@ aside{
     top: 7%;
 
 }
-.form-button button{
+
+.form-button button {
     width: 66%;
     height: 58px;
     border-radius: 5px;
@@ -572,19 +600,22 @@ aside{
     border-bottom: 3px solid #8783b0;
     background: #9f9acf;
 }
-.form-button button p{
-    font-family: "Proxima Nova",sans-serif;
+
+.form-button button p {
+    font-family: "Proxima Nova", sans-serif;
     font-size: 18px;
     margin-top: 4%;
 }
-.form-button button:hover{
+
+.form-button button:hover {
     background: white;
     color: #9f9acf;
 }
+
 /*aside:hover #form{*/
-     /*z-index: 0;*/
- /*}*/
-.form-scroll{
+/*z-index: 0;*/
+/*}*/
+.form-scroll {
     width: 70px;
     height: 70px;
     background: rgba(179, 175, 212, 0.75);
@@ -592,44 +623,51 @@ aside{
     margin-right: 10%;
 
 }
+
 .form-scroll img {
     position: relative;
     width: 60%;
     top: 28%;
     left: 18%;
 }
-.form-scroll:hover{
+
+.form-scroll:hover {
     background: #b3afd4;
 }
 
-#fly-block1{
-float: right;
+#fly-block1 {
+    float: right;
 }
-#fly-block1_icon{
+
+#fly-block1_icon {
     width: 70px;
     height: 70px;
     float: left;
-    background:#9f9acf ;
+    background: #9f9acf;
     display: block;
 }
-#fly-block1_icon:hover{
-background: #8783b0;
+
+#fly-block1_icon:hover {
+    background: #8783b0;
 }
-#fly-block1_text{
+
+#fly-block1_text {
     width: 210px;
     height: 70px;
     float: right;
-    background:rgba(235, 235, 235, 0.57);
+    background: rgba(235, 235, 235, 0.57);
     display: none;
     text-align: center;
     color: #9f9acf;
 }
-#fly-block1_text p{
+
+#fly-block1_text p {
 
     margin-top: 5px;
     margin-left: 24px;
 }
-#fly-block2{
+
+#fly-block2 {
 
     float: right;
     margin-top: 5.3%;
@@ -642,42 +680,49 @@ background: #8783b0;
 
 }
 
-#fly-block2_icon{
+#fly-block2_icon {
     width: 70px;
     height: 70px;
     float: left;
-    background:#9f9acf ;
+    background: #9f9acf;
     display: block;
 }
-#fly-block2_icon:hover{
+
+#fly-block2_icon:hover {
     background: #8783b0;
 }
-#fly-block2_text{
+
+#fly-block2_text {
     width: 210px;
     height: 70px;
     float: right;
-    background:rgba(235, 235, 235, 0.57);
+    background: rgba(235, 235, 235, 0.57);
     display: none;
     text-align: center;
     color: #9f9acf;
 }
-#fly-block2_text p{
 
-margin-top: 5px;
-margin-left: 24px;
+#fly-block2_text p {
+
+    margin-top: 5px;
+    margin-left: 24px;
 }
-#fly-block1_icon img{
+
+#fly-block1_icon img {
     margin: 13px 13px;
 }
-#fly-block2_icon img{
+
+#fly-block2_icon img {
     margin: 16px 25px;
 }
-footer{
+
+footer {
     width: 100%;
     height: 120px;
     background: #9f9acf;
 }
-.footer-part{
+
+.footer-part {
     width: 79%;
     margin: 0 auto;
     margin-top: 1;
@@ -685,39 +730,49 @@ footer{
     top: 40%;
 
 }
-.footer-part_C{
+
+.footer-part_C {
     float: left;
     color: white;
 }
-.footer-part_icon{
+
+.footer-part_icon {
     width: 23%;
     float: right;
     display: flex;
     justify-content: space-around;
 }
-.footer-part_icon img{
+
+.footer-part_icon img {
     margin-left: 1%;
 }
-@media screen and (min-width: 320px) and (max-width: 1024px){
-    .main-content_more{
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+    .main-content_more {
         margin-top: -60%;
     }
+
     .col-md-4 img {
         margin-top: 19%;
     }
-    #Seo{
+
+    #Seo {
         margin-top: 30%;
     }
-    section{
+
+    section {
         margin-top: 140%;
     }
-    #form{
+
+    #form {
         margin-top: -91.7%;
     }
-    #fly-block2{
+
+    #fly-block2 {
         margin-top: 6.3%;
         left: 7.1%;
     }
+
     .footer-part_icon {
         width: 31%;
     }
