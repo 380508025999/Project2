@@ -577,7 +577,11 @@ aside{
     font-size: 18px;
     margin-top: 4%;
 }
-/*aside:active #form{*/
+.form-button button:hover{
+    background: white;
+    color: #9f9acf;
+}
+/*aside:hover #form{*/
      /*z-index: 0;*/
  /*}*/
 .form-scroll{
@@ -597,6 +601,103 @@ aside{
 .form-scroll:hover{
     background: #b3afd4;
 }
+
+#fly-block1{
+float: right;
+}
+#fly-block1_icon{
+    width: 70px;
+    height: 70px;
+    float: left;
+    background:#9f9acf ;
+    display: block;
+}
+#fly-block1_icon:hover{
+background: #8783b0;
+}
+#fly-block1_text{
+    width: 210px;
+    height: 70px;
+    float: right;
+    background:rgba(235, 235, 235, 0.57);
+    display: none;
+    text-align: center;
+    color: #9f9acf;
+}
+#fly-block1_text p{
+
+    margin-top: 5px;
+    margin-left: 24px;
+}
+#fly-block2{
+
+    float: right;
+    margin-top: 5.3%;
+    margin-left: 13%;
+    /* margin-top: 100%; */
+    /* left: 9%; */
+    left: 5.3%;
+    position: relative;
+    /* margin-left: 100%; */
+
+}
+
+#fly-block2_icon{
+    width: 70px;
+    height: 70px;
+    float: left;
+    background:#9f9acf ;
+    display: block;
+}
+#fly-block2_icon:hover{
+    background: #8783b0;
+}
+#fly-block2_text{
+    width: 210px;
+    height: 70px;
+    float: right;
+    background:rgba(235, 235, 235, 0.57);
+    display: none;
+    text-align: center;
+    color: #9f9acf;
+}
+#fly-block2_text p{
+
+margin-top: 5px;
+margin-left: 24px;
+}
+#fly-block1_icon img{
+    margin: 13px 13px;
+}
+#fly-block2_icon img{
+    margin: 16px 25px;
+}
+footer{
+    width: 100%;
+    height: 120px;
+    background: #9f9acf;
+}
+.footer-part{
+    width: 79%;
+    margin: 0 auto;
+    margin-top: 1;
+    position: relative;
+    top: 40%;
+
+}
+.footer-part_C{
+    float: left;
+    color: white;
+}
+.footer-part_icon{
+    width: 23%;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-part_icon img{
+    margin-left: 1%;
+}
 @media screen and (min-width: 320px) and (max-width: 1024px){
     .main-content_more{
         margin-top: -60%;
@@ -612,5 +713,12 @@ aside{
     }
     #form{
         margin-top: -91.7%;
+    }
+    #fly-block2{
+        margin-top: 6.3%;
+        left: 7.1%;
+    }
+    .footer-part_icon {
+        width: 31%;
     }
 }
