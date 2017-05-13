@@ -165,16 +165,15 @@
     });
 
     $(document).ready(function () {
-        $('#fly-block1_icon').click(function () {
-            $(this).parent().children('div#fly-block1_text').toggle('normal');
-            return false;
+        $('.fly-block1_icon').click(function () {
+            $(this).parent().children('div.fly-block1_text').toggleClass('opened');
+            // return false;
         });
-    });
-    $(document).ready(function () {
-        $('#fly-block2_icon').click(function () {
-            $(this).parent().children('div#fly-block2_text').toggle('normal');
-            return false;
-        });
-    });
+
+        // $('#fly-block2_icon').click(function () {
+        //     $(this).parent().children('div#fly-block2_text').toggle('normal');
+        //     // return false;
+        // });
+});
 
 })(jQuery);

@@ -634,56 +634,64 @@ aside {
 .form-scroll:hover {
     background: #b3afd4;
 }
-
-#fly-block1 {
+#fly-parent{
     float: right;
 }
+.fly-block1 {
+    clear: both;
+font-size: 0;
 
-#fly-block1_icon {
-    width: 70px;
-    height: 70px;
-    float: left;
-    background: #9f9acf;
-    display: block;
+
+    /*right: -210px;*/
 }
 
-#fly-block1_icon:hover {
+.fly-block1_icon {
+    width: 70px;
+    height: 70px;
+
+    background: #9f9acf;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.fly-block1_icon:hover {
     background: #8783b0;
 }
 
-#fly-block1_text {
+.fly-block1_text {
     width: 210px;
     height: 70px;
-    float: right;
+
     background: rgba(235, 235, 235, 0.57);
     display: none;
     text-align: center;
     color: #9f9acf;
+
+    right: -210px;
 }
 
-#fly-block1_text p {
+.fly-block1_text p {
 
-    margin-top: 5px;
-    margin-left: 24px;
+font-size: 14px;
+}
+.fly-block1_text.opened {
+    right:0;
+    display: inline-block;
 }
 
-#fly-block2 {
+.fly-block2 {
+    clear: both;
+    font-size: 0;
 
-    float: right;
-    margin-top: 5.3%;
-    margin-left: 13%;
-    /* margin-top: 100%; */
-    /* left: 9%; */
-    left: 5.3%;
-    position: relative;
-    /* margin-left: 100%; */
+
+
 
 }
 
 #fly-block2_icon {
     width: 70px;
     height: 70px;
-    float: left;
+
     background: #9f9acf;
     display: block;
 }
@@ -695,7 +703,7 @@ aside {
 #fly-block2_text {
     width: 210px;
     height: 70px;
-    float: right;
+
     background: rgba(235, 235, 235, 0.57);
     display: none;
     text-align: center;
@@ -704,8 +712,7 @@ aside {
 
 #fly-block2_text p {
 
-    margin-top: 5px;
-    margin-left: 24px;
+
 }
 
 #fly-block1_icon img {
