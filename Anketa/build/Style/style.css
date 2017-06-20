@@ -3,10 +3,6 @@
 body {
   background-color: #f0f0f0; }
 
-@media only screen and (min-width: 1920px) {
-  main {
-    padding-top: 8%; } }
-
 .name {
   width: 60%;
   height: 254px;
@@ -23,10 +19,6 @@ body {
       top: 60px;
       left: 22%;
       border-radius: 67px; }
-      @media only screen and (min-width: 1920px) {
-        .name .name-photo img {
-          left: 24%;
-          top: 257px; } }
   .name .name-info {
     position: absolute;
     top: 0;
@@ -40,9 +32,6 @@ body {
     @media only screen and (min-width: 321px) and (max-width: 1029px) {
       .name .name-info {
         width: 350px; } }
-    @media only screen and (min-width: 1920px) {
-      .name .name-info {
-        top: 193px; } }
     .name .name-info .name-info_data {
       height: 45px;
       border-bottom: 2px solid #333;
@@ -61,9 +50,6 @@ body {
     position: absolute;
     right: 21%;
     top: 87px; }
-    @media only screen and (min-width: 1920px) {
-      .name .name-pech {
-        top: 270px; } }
 
 .skills {
   width: 60%;
