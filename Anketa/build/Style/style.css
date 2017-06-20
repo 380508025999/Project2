@@ -1,0 +1,197 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+body {
+  background-color: #f0f0f0; }
+
+@media only screen and (min-width: 1920px) {
+  main {
+    padding-top: 8%; } }
+
+.name {
+  width: 60%;
+  height: 254px;
+  margin: 0 auto;
+  background: url("../img/Untitled-1.png"); }
+  .name .name-photo {
+    border-radius: 20px;
+    width: 10%;
+    height: 20%; }
+    .name .name-photo img {
+      width: 139px;
+      height: 139px;
+      position: absolute;
+      top: 60px;
+      left: 22%;
+      border-radius: 67px; }
+      @media only screen and (min-width: 1920px) {
+        .name .name-photo img {
+          left: 24%;
+          top: 257px; } }
+  .name .name-info {
+    position: absolute;
+    top: 0;
+    right: 23%;
+    width: 42%;
+    content: ' ';
+    z-index: 1; }
+    @media only screen and (max-width: 320px) {
+      .name .name-info {
+        width: 38%; } }
+    @media only screen and (min-width: 321px) and (max-width: 1029px) {
+      .name .name-info {
+        width: 350px; } }
+    @media only screen and (min-width: 1920px) {
+      .name .name-info {
+        top: 193px; } }
+    .name .name-info .name-info_data {
+      height: 45px;
+      border-bottom: 2px solid #333;
+      margin: -5px; }
+      .name .name-info .name-info_data p {
+        position: relative;
+        bottom: -16px;
+        font-size: 17px;
+        letter-spacing: 2px;
+        color: #666;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700; }
+  .name .name-pech {
+    content: ' ';
+    z-index: 2;
+    position: absolute;
+    right: 21%;
+    top: 87px; }
+    @media only screen and (min-width: 1920px) {
+      .name .name-pech {
+        top: 270px; } }
+
+.skills {
+  width: 60%;
+  height: 254px;
+  margin: 0 auto;
+  margin-top: -17px;
+  background: url(../img/Untitled-1.png); }
+  .skills h2 {
+    font-family: "Roboto", sans-serif;
+    margin-left: 7%;
+    top: 13px;
+    padding-top: 33px; }
+  .skills .checkbox {
+    display: flex;
+    justify-content: space-around; }
+    .skills .checkbox label {
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      padding-left: 25px;
+      margin-right: 15px;
+      padding-top: 31px;
+      font-size: 13px;
+      font-family: "Roboto", sans-serif;
+      letter-spacing: 1px;
+      color: #666;
+      font-weight: 700; }
+    .skills .checkbox input[type=radio] {
+      display: none; }
+    .skills .checkbox label:before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: 0;
+      border-radius: 5px;
+      background-color: #eeeeee; }
+    .skills .checkbox label:after {
+      margin-top: 10px; }
+    .skills .checkbox .radio label:before {
+      border-radius: 8px; }
+    .skills .checkbox input[type=radio]:checked + label:before {
+      content: "\2022";
+      color: #f3f3f3;
+      font-size: 30px;
+      text-align: center;
+      line-height: 18px; }
+    .skills .checkbox input[type=checkbox] {
+      display: none; }
+    .skills .checkbox .checkbox label:before {
+      border-radius: 3px; }
+    .skills .checkbox input[type=checkbox]:checked + label:before {
+      content: "\2713";
+      font-size: 15px;
+      color: #f3f3f3;
+      background: #0093d7;
+      border-radius: 5px;
+      text-align: center;
+      line-height: 21px; }
+  .skills .checkbox1 {
+    margin-top: -16px; }
+  .skills .checkbox2 {
+    margin-top: -14px; }
+    .skills .checkbox2 #check6 label {
+      margin-top: 36px; }
+  .skills .checkbox3 {
+    margin-top: -12px; }
+  .skills #check10 {
+    margin-top: 33px; }
+  .skills .checkbox4 {
+    margin-top: -11px; }
+
+.level {
+  width: 60%;
+  height: 254px;
+  margin: 0 auto;
+  margin-top: 0.2%;
+  background: url(../img/Untitled-1.png); }
+  .level .level-arrow {
+    display: grid;
+    margin-top: 60px;
+    margin-left: 4%;
+    position: absolute; }
+    .level .level-arrow .level-arrow_arrow {
+      position: absolute;
+      margin-top: 89px;
+      margin-left: 82px;
+      -moz-transition: all 2.1s ease-in-out;
+      -webkit-transition: all 2.1s ease-in-out;
+      -o-transition: all 2.1s ease-in-out;
+      -ms-transition: all 2.1s ease-in-out;
+      transition: all 2.1s ease-in-out; }
+      .level .level-arrow .level-arrow_arrow:hover {
+        -moz-transform: rotate(150deg);
+        /* ╨Ф╨╗╤П Firefox */
+        -ms-transform: rotate(150deg);
+        /* ╨Ф╨╗╤П IE */
+        -webkit-transform: rotate(150deg);
+        /* ╨Ф╨╗╤П Safari, Chrome, iOS */
+        -o-transform: rotate(150deg);
+        /* ╨Ф╨╗╤П Opera */
+        transform: rotate(150deg);
+        margin-left: 130px;
+        margin-top: 100px; }
+  .level .level-timer {
+    float: right;
+    width: 25%;
+    margin-top: 44px;
+    margin-right: 155px; }
+    @media only screen and (max-width: 320px) {
+      .level .level-timer {
+        margin-right: 117px; } }
+    @media only screen and (min-width: 321px) and (max-width: 1029px) {
+      .level .level-timer {
+        margin-right: 117px; } }
+    @media only screen and (min-width: 1920px) {
+      .level .level-timer {
+        width: 16%;
+        margin-right: 355px; } }
+    .level .level-timer .level-timer_p {
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+      font-weight: 500; }
+    .level .level-timer .timer {
+      color: #0093d7;
+      font-size: 50px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 700; }
+
+/*# sourceMappingURL=style.css.map */
