@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+$family: "Ubuntu", sans-serif;
+$small: 320px;
+$large: 1026px;
+$large2: 1064px;
+$large3: 1600px;
+@mixin fluency {
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+}
+
+@mixin fluency2 {
+  -moz-transition: all 5s ease-out;
+  -o-transition: all 5s ease-out;
+  -webkit-transition: all 5s ease-out;
+}
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $large) {
+      @content;
+    }
+  } @else if $media == medium-screens {
+    @media only screen and (min-width: $small + 1) and (max-width: $large - 1) {
+      @content;
+    }
+  } @else if $media == wide-screens {
+    @media only screen and (min-width: $large2 + 1) and (max-width: $large3 - 1) {
+      @content;
+    }
+  }
+
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.30);
+  .header-menu {
+    width: 59.375%;
+    margin: 0 auto;
+    margin-top: 29px;
+    display: flex;
+    justify-content: space-between;
+    .header-menu_menu ul li.menu__list a:focus + ul.menu__drop,
+    .header-menu_menu ul li.menu__list.focus ul.menu__drop {
+      opacity: 1;
+    }
+    @include respond-to(medium-screens) {
+      width: 80.375%;
+    }
+
+    .header-menu_menu {
+      width: 57%;
+      margin: 0 auto;
+      .underline {
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+
+      }
+      .underline:after {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        width: 0;
+        height: 1px;
+        background-color: #ffffff;
+        content: "";
+        transition: width 0.5s;
+      }
+      .underline:hover {
+        color: #ffffff;
+      }
+      .underline:hover:after {
+        width: 100%;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-family: $family;
+        font-size: 18px;
+        @include respond-to(medium-screens) {
+          font-size: 15px
+        }
+        @include respond-to(wide-screens) {
+          font-size: 15px
+        }
+
+        .fa {
+          top: 1px;
+          position: relative;
+        }
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .menu {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1px;
+
+        .menu__list {
+          position: relative;
+          top: -30px;
+          width: 94px;
+          height: 80px;
+          text-align: center;
+          @include fluency;
+
+          @include respond-to(handhelds) {
+            top: -31px;
+          }
+          &:focus {
+
+            background: rgba(0, 0, 0, 0.3);
+
+          }
+          a {
+            position: relative;
+            top: 29px;
+            @include respond-to(medium-screens) {
+              top: 31px;
+            }
+
+          }
+
+          &:focus .menu__drop {
+
+            opacity: 1;
+
+          }
+
+        }
+
+        .menu__drop {
+          position: absolute;
+          top: 80px;
+          width: 210px;
+          height: 100px;
+          line-height: 21px;
+          text-align: left;
+          opacity: 0;
+          background: rgba(0, 0, 0, 0.3);
+          @include fluency;
+          .underline {
+            top: 17px;
+            position: relative;
+          }
+          li {
+
+            margin-left: 10px;
+          }
+
+        }
+
+      }
+
+    }
+    p {
+      color: white;
+      font-family: $family;
+      font-size: 16px;
+    }
+  }
+}
+
+main {
+  width: 100%;
+  height: 700px;
+  background: url(../img/fon1.png) no-repeat;
+  background-size: cover;
+  margin-top: -20px;
+  .main-inner {
+    width: 42.6%;
+    margin: 0 auto;
+    text-align: center;
+    top: 233px;
+    color: white;
+    position: relative;
+    font-family: $family;
+    @include respond-to(medium-screens) {
+      width: 46.6%;
+    }
+    h1 {
+      font-size: 42px;
+      @include respond-to(medium-screens) {
+        font-size: 39px
+      }
+      @include respond-to(wide-screens) {
+        font-size: 40px
+      }
+    }
+    p {
+      font-size: 22px;
+      @include respond-to(medium-screens) {
+        font-size: 20px
+      }
+      @include respond-to(wide-screens) {
+        font-size: 20px
+      }
+      a {
+        text-decoration: none;
+        font-weight: 700;
+        color: #374c91;
+        @include fluency;
+        &:hover {
+          -webkit-transform: scale(1.3);
+          -moz-transform: scale(1.3);
+          -o-transform: scale(1.3);
+          color: rgb(28, 51, 126);
+        }
+      }
+    }
+    .main-inner_search {
+
+      .search-text {
+        padding-left: 57px;
+        background: white;
+        background-image: url("../img/search.png");
+        background-repeat: no-repeat;
+        background-position-x: 17px;
+        background-position-y: 17px;
+        border: none;
+        color: #3F51B5;
+        font-family: $family;
+        font-size: 18px;
+        width: 65%;;
+        height: 56px;
+        @include respond-to(wide-screens) {
+          width: 61%;
+        }
+
+      }
+      .search-button {
+        width: 30%;
+        margin-top: 17px;
+        height: 58px;
+        position: relative;
+        top: 2px;
+        left: -3px;
+        background: #374c91;
+        color: white;
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 24px;
+        border: none;
+        @include respond-to(wide-screens) {
+          width: 26%;
+        }
+        @include fluency;
+        &:hover {
+          color: white;
+          background: rgb(28, 51, 126);
+        }
+      }
+
+    }
+    #scroll {
+      top: 229px;
+      font-size: 26px;
+      position: relative;
+      @include respond-to(medium-screens) {
+        top: 153px
+      }
+      @include respond-to(wide-screens) {
+        top: 193px;
+      }
+    }
+  }
+  .modal-window {
+    .modal1 {
+      width: 62px;
+      height: 60px;
+      background: #374c91;
+      position: absolute;
+      right: 37px;
+      top: 602px;
+      text-align: center;
+
+      a {
+        width: 62px;
+        height: 60px;
+        display: block;
+        @include fluency;
+        img {
+          margin-top: 8px;
+        }
+        &:hover {
+          background: rgb(28, 51, 126);
+        }
+      }
+    }
+    .modal-wrapper {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, .5);
+      display: none;
+    }
+    .modal-wrapper.opened {
+      display: flex;
+      z-index: 2;
+      content: " ";
+    }
+    .modal {
+      margin: auto;
+      width: 308px;
+      height: 345px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 15px;
+      display: none;
+      text-align: center;
+      .close {
+        float: right;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 1;
+        color: white;
+        text-shadow: 0 0 0 #fff;
+        filter: alpha(opacity=20);
+        opacity: 1;
+      }
+      h3 {
+        color: white;
+        font-family: $family;
+        font-size: 22px;
+        margin-top: 47px;
+        margin-bottom: 0;
+      }
+      .modal-form {
+        input {
+          margin-top: 23px;
+          width: 247px;
+          background: none;
+          border: none;
+          border-bottom: 1px solid #787878;
+          font-size: 16px;
+          font-family: $family;
+          line-height: inherit;
+          &:focus {
+            color: white;
+            font-family: $family;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    button {
+      width: 247px;
+      height: 58px;
+      position: absolute;
+      bottom: 28px;
+      right: 29px;
+      background: #374c91;
+      border: none;
+      color: white;
+      font-size: 20px;
+      font-family: $family;
+      @include fluency;
+      &:hover {
+        background: rgb(28, 51, 126);
+      }
+    }
+  }
+
+}
+
+section {
+  .section-some {
+    width: 25%;
+    height: 299px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    font-family: $family;
+    @include respond-to(medium-screens) {
+      width: 45%;
+    }
+    @include respond-to(wide-screens) {
+      width: 35%;
+    }
+    .section-some_title {
+      margin-top: 75px;
+      font-size: 40px;
+      color: #374c91;
+      @include respond-to(medium-screens) {
+        font-size: 37px;
+      }
+      @include respond-to(wide-screens) {
+        font-size: 37px
+      }
+
+    }
+    img {
+      position: relative;
+      margin-top: 33px;
+    }
+    .section-some_text {
+      width: 70%;
+      color: #4f4f4f;
+      font-size: 18px;
+      margin: 0 auto;
+      margin-top: 50px;
+
+    }
+  }
+  .container-fluid {
+    .row {
+      .col-md-6 {
+        width: 50%;
+        height: 305px;
+        @include respond-to(medium-screens) {
+          width: 100%;
+        }
+      }
+      #col-1 {
+        background: #dbd7e5;
+        .col-1 {
+          width: 587px;
+          float: right;
+          img {
+            float: left;
+            margin-top: 84px;
+          }
+          .col-1_info {
+            width: 73%;
+            margin-top: 48px;
+            position: relative;
+            left: 36px;
+            font-family: "Ubuntu", sans-serif;
+            color: #515151;
+            .col-1_title {
+              font-size: 19px;
+            }
+            .col-1_text {
+              font-size: 17px;
+              margin-top: 24px;
+            }
+            button {
+              width: 189px;
+              height: 50px;
+              border: none;
+              color: white;
+              background: #374c91;
+              font-size: 15px;
+              margin-top: 45px;
+
+              @include fluency;
+              &:hover {
+                background: rgb(28, 51, 126);
+              }
+            }
+
+          }
+        }
+      }
+      #col-2 {
+        background: #b6cbd9;
+        .col-2 {
+          width: 587px;
+          margin-left: 85px;
+          img {
+            float: left;
+            margin-top: 84px;
+          }
+          .col-2_info {
+            width: 64%;
+            font-family: "Ubuntu", sans-serif;
+            color: #515151;
+            position: relative;
+            left: 72px;
+            top: 48px;
+            .col-2_title {
+              font-size: 19px;
+            }
+            .col-2_text {
+              font-size: 17px;
+              margin-top: 30px;
+            }
+            button {
+              width: 189px;
+              height: 50px;
+              border: none;
+              color: white;
+              background: #374c91;
+              font-size: 15px;
+              margin-top: 17px;
+
+              @include fluency;
+              &:hover {
+                background: rgb(28, 51, 126);
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+  .section-grid {
+    @include respond-to(medium-screens) {
+      background: rgba(0, 0, 0, 0.8);
+    }
+    .col-md-3 {
+      width: 24.8%;
+      height: 350px;
+      @include respond-to(medium-screens) {
+        width: 47%;
+        margin-left: 270px;
+      }
+      @include respond-to(handhelds) {
+        width: 45%;
+        margin-left: 295px;
+      }
+      @include respond-to(wide-screens) {
+        width: 24.75%;
+      }
+    }
+    #block1 {
+      background: url("../img/img4.png");
+
+      &:hover .block-hover {
+        display: block;
+      }
+    }
+    #block2 {
+      background: url("../img/img5.png");
+      @include fluency;
+      &:hover .block-hover {
+        display: block;
+      }
+    }
+    #block3 {
+      background: url("../img/img6.png");
+      @include fluency;
+      &:hover .block-hover {
+        display: block;
+      }
+    }
+    #block4 {
+      background: url("../img/img7.png");
+      @include fluency;
+      &:hover .block-hover {
+        display: block;
+      }
+    }
+    .block-hover {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 5px;
+      margin: 20px;
+      display: none;
+      text-align: center;
+      font-family: $family;
+      color: white;
+      @include fluency2;
+      .block-hover_title {
+        font-size: 18px;
+        margin-top: 33px;
+      }
+      .block-hover_text {
+        font-size: 14px;
+        width: 83%;
+        margin-top: 9px;
+        margin-left: 30px;
+        text-align: left;
+        @include respond-to(wide-screens) {
+          width: 84%;
+          font-size: 13px
+        }
+      }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  height: 71px;
+  margin-top: 0;
+  text-align: center;
+  color: #787878;
+  font-family: $family;
+  font-size: 16px;
+  background: #1c1c1c;
+  p {
+    position: relative;
+    top: 25px;
+  }
+}
+

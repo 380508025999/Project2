@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
+header {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3); }
+  header .header-menu {
+    width: 59.375%;
+    margin: 0 auto;
+    margin-top: 29px;
+    display: flex;
+    justify-content: space-between; }
+    header .header-menu .header-menu_menu ul li.menu__list a:focus + ul.menu__drop,
+    header .header-menu .header-menu_menu ul li.menu__list.focus ul.menu__drop {
+      opacity: 1; }
+    @media only screen and (min-width: 321px) and (max-width: 1025px) {
+      header .header-menu {
+        width: 80.375%; } }
+    header .header-menu .header-menu_menu {
+      width: 57%;
+      margin: 0 auto; }
+      header .header-menu .header-menu_menu .underline {
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer; }
+      header .header-menu .header-menu_menu .underline:after {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        width: 0;
+        height: 1px;
+        background-color: #ffffff;
+        content: "";
+        transition: width 0.5s; }
+      header .header-menu .header-menu_menu .underline:hover {
+        color: #ffffff; }
+      header .header-menu .header-menu_menu .underline:hover:after {
+        width: 100%; }
+      header .header-menu .header-menu_menu a {
+        text-decoration: none;
+        color: white;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 18px; }
+        @media only screen and (min-width: 321px) and (max-width: 1025px) {
+          header .header-menu .header-menu_menu a {
+            font-size: 15px; } }
+        @media only screen and (min-width: 1065px) and (max-width: 1599px) {
+          header .header-menu .header-menu_menu a {
+            font-size: 15px; } }
+        header .header-menu .header-menu_menu a .fa {
+          top: 1px;
+          position: relative; }
+      header .header-menu .header-menu_menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none; }
+      header .header-menu .header-menu_menu .menu {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1px; }
+        header .header-menu .header-menu_menu .menu .menu__list {
+          position: relative;
+          top: -30px;
+          width: 94px;
+          height: 80px;
+          text-align: center;
+          -moz-transition: all 1s ease-out;
+          -o-transition: all 1s ease-out;
+          -webkit-transition: all 1s ease-out; }
+          @media only screen and (max-width: 1026px) {
+            header .header-menu .header-menu_menu .menu .menu__list {
+              top: -31px; } }
+          header .header-menu .header-menu_menu .menu .menu__list:focus {
+            background: rgba(0, 0, 0, 0.3); }
+          header .header-menu .header-menu_menu .menu .menu__list a {
+            position: relative;
+            top: 29px; }
+            @media only screen and (min-width: 321px) and (max-width: 1025px) {
+              header .header-menu .header-menu_menu .menu .menu__list a {
+                top: 31px; } }
+          header .header-menu .header-menu_menu .menu .menu__list:focus .menu__drop {
+            opacity: 1; }
+        header .header-menu .header-menu_menu .menu .menu__drop {
+          position: absolute;
+          top: 80px;
+          width: 210px;
+          height: 100px;
+          line-height: 21px;
+          text-align: left;
+          opacity: 0;
+          background: rgba(0, 0, 0, 0.3);
+          -moz-transition: all 1s ease-out;
+          -o-transition: all 1s ease-out;
+          -webkit-transition: all 1s ease-out; }
+          header .header-menu .header-menu_menu .menu .menu__drop .underline {
+            top: 17px;
+            position: relative; }
+          header .header-menu .header-menu_menu .menu .menu__drop li {
+            margin-left: 10px; }
+    header .header-menu p {
+      color: white;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 16px; }
+
+main {
+  width: 100%;
+  height: 700px;
+  background: url(../img/fon1.png) no-repeat;
+  background-size: cover;
+  margin-top: -20px; }
+  main .main-inner {
+    width: 42.6%;
+    margin: 0 auto;
+    text-align: center;
+    top: 233px;
+    color: white;
+    position: relative;
+    font-family: "Ubuntu", sans-serif; }
+    @media only screen and (min-width: 321px) and (max-width: 1025px) {
+      main .main-inner {
+        width: 46.6%; } }
+    main .main-inner h1 {
+      font-size: 42px; }
+      @media only screen and (min-width: 321px) and (max-width: 1025px) {
+        main .main-inner h1 {
+          font-size: 39px; } }
+      @media only screen and (min-width: 1065px) and (max-width: 1599px) {
+        main .main-inner h1 {
+          font-size: 40px; } }
+    main .main-inner p {
+      font-size: 22px; }
+      @media only screen and (min-width: 321px) and (max-width: 1025px) {
+        main .main-inner p {
+          font-size: 20px; } }
+      @media only screen and (min-width: 1065px) and (max-width: 1599px) {
+        main .main-inner p {
+          font-size: 20px; } }
+      main .main-inner p a {
+        text-decoration: none;
+        font-weight: 700;
+        color: #374c91;
+        -moz-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        -webkit-transition: all 1s ease-out; }
+        main .main-inner p a:hover {
+          -webkit-transform: scale(1.3);
+          -moz-transform: scale(1.3);
+          -o-transform: scale(1.3);
+          color: #1c337e; }
+    main .main-inner .main-inner_search .search-text {
+      padding-left: 57px;
+      background: white;
+      background-image: url("../img/search.png");
+      background-repeat: no-repeat;
+      background-position-x: 17px;
+      background-position-y: 17px;
+      border: none;
+      color: #3F51B5;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 18px;
+      width: 65%;
+      height: 56px; }
+      @media only screen and (min-width: 1065px) and (max-width: 1599px) {
+        main .main-inner .main-inner_search .search-text {
+          width: 61%; } }
+    main .main-inner .main-inner_search .search-button {
+      width: 30%;
+      margin-top: 17px;
+      height: 58px;
+      position: relative;
+      top: 2px;
+      left: -3px;
+      background: #374c91;
+      color: white;
+      text-align: center;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 24px;
+      border: none;
+      -moz-transition: all 1s ease-out;
+      -o-transition: all 1s ease-out;
+      -webkit-transition: all 1s ease-out; }
+      @media only screen and (min-width: 1065px) and (max-width: 1599px) {
+        main .main-inner .main-inner_search .search-button {
+          width: 26%; } }
+      main .main-inner .main-inner_search .search-button:hover {
+        color: white;
+        background: #1c337e; }
+    main .main-inner #scroll {
+      top: 229px;
+      font-size: 26px;
+      position: relative; }
+      @media only screen and (min-width: 321px) and (max-width: 1025px) {
+        main .main-inner #scroll {
+          top: 153px; } }
+      @media only screen and (min-width: 1065px) and (max-width: 1599px) {
+        main .main-inner #scroll {
+          top: 193px; } }
+  main .modal-window .modal1 {
+    width: 62px;
+    height: 60px;
+    background: #374c91;
+    position: absolute;
+    right: 37px;
+    top: 602px;
+    text-align: center; }
+    main .modal-window .modal1 a {
+      width: 62px;
+      height: 60px;
+      display: block;
+      -moz-transition: all 1s ease-out;
+      -o-transition: all 1s ease-out;
+      -webkit-transition: all 1s ease-out; }
+      main .modal-window .modal1 a img {
+        margin-top: 8px; }
+      main .modal-window .modal1 a:hover {
+        background: #1c337e; }
+  main .modal-window .modal-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none; }
+  main .modal-window .modal-wrapper.opened {
+    display: flex;
+    z-index: 2;
+    content: " "; }
+  main .modal-window .modal {
+    margin: auto;
+    width: 308px;
+    height: 345px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    display: none;
+    text-align: center; }
+    main .modal-window .modal .close {
+      float: right;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 1;
+      color: white;
+      text-shadow: 0 0 0 #fff;
+      filter: alpha(opacity=20);
+      opacity: 1; }
+    main .modal-window .modal h3 {
+      color: white;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 22px;
+      margin-top: 47px;
+      margin-bottom: 0; }
+    main .modal-window .modal .modal-form input {
+      margin-top: 23px;
+      width: 247px;
+      background: none;
+      border: none;
+      border-bottom: 1px solid #787878;
+      font-size: 16px;
+      font-family: "Ubuntu", sans-serif;
+      line-height: inherit; }
+      main .modal-window .modal .modal-form input:focus {
+        color: white;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 16px; }
+  main .modal-window button {
+    width: 247px;
+    height: 58px;
+    position: absolute;
+    bottom: 28px;
+    right: 29px;
+    background: #374c91;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out; }
+    main .modal-window button:hover {
+      background: #1c337e; }
+
+section .section-some {
+  width: 25%;
+  height: 299px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  font-family: "Ubuntu", sans-serif; }
+  @media only screen and (min-width: 321px) and (max-width: 1025px) {
+    section .section-some {
+      width: 45%; } }
+  @media only screen and (min-width: 1065px) and (max-width: 1599px) {
+    section .section-some {
+      width: 35%; } }
+  section .section-some .section-some_title {
+    margin-top: 75px;
+    font-size: 40px;
+    color: #374c91; }
+    @media only screen and (min-width: 321px) and (max-width: 1025px) {
+      section .section-some .section-some_title {
+        font-size: 37px; } }
+    @media only screen and (min-width: 1065px) and (max-width: 1599px) {
+      section .section-some .section-some_title {
+        font-size: 37px; } }
+  section .section-some img {
+    position: relative;
+    margin-top: 33px; }
+  section .section-some .section-some_text {
+    width: 70%;
+    color: #4f4f4f;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-top: 50px; }
+section .container-fluid .row .col-md-6 {
+  width: 50%;
+  height: 305px; }
+  @media only screen and (min-width: 321px) and (max-width: 1025px) {
+    section .container-fluid .row .col-md-6 {
+      width: 100%; } }
+section .container-fluid .row #col-1 {
+  background: #dbd7e5; }
+  section .container-fluid .row #col-1 .col-1 {
+    width: 587px;
+    float: right; }
+    section .container-fluid .row #col-1 .col-1 img {
+      float: left;
+      margin-top: 84px; }
+    section .container-fluid .row #col-1 .col-1 .col-1_info {
+      width: 73%;
+      margin-top: 48px;
+      position: relative;
+      left: 36px;
+      font-family: "Ubuntu", sans-serif;
+      color: #515151; }
+      section .container-fluid .row #col-1 .col-1 .col-1_info .col-1_title {
+        font-size: 19px; }
+      section .container-fluid .row #col-1 .col-1 .col-1_info .col-1_text {
+        font-size: 17px;
+        margin-top: 24px; }
+      section .container-fluid .row #col-1 .col-1 .col-1_info button {
+        width: 189px;
+        height: 50px;
+        border: none;
+        color: white;
+        background: #374c91;
+        font-size: 15px;
+        margin-top: 45px;
+        -moz-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        -webkit-transition: all 1s ease-out; }
+        section .container-fluid .row #col-1 .col-1 .col-1_info button:hover {
+          background: #1c337e; }
+section .container-fluid .row #col-2 {
+  background: #b6cbd9; }
+  section .container-fluid .row #col-2 .col-2 {
+    width: 587px;
+    margin-left: 85px; }
+    section .container-fluid .row #col-2 .col-2 img {
+      float: left;
+      margin-top: 84px; }
+    section .container-fluid .row #col-2 .col-2 .col-2_info {
+      width: 64%;
+      font-family: "Ubuntu", sans-serif;
+      color: #515151;
+      position: relative;
+      left: 72px;
+      top: 48px; }
+      section .container-fluid .row #col-2 .col-2 .col-2_info .col-2_title {
+        font-size: 19px; }
+      section .container-fluid .row #col-2 .col-2 .col-2_info .col-2_text {
+        font-size: 17px;
+        margin-top: 30px; }
+      section .container-fluid .row #col-2 .col-2 .col-2_info button {
+        width: 189px;
+        height: 50px;
+        border: none;
+        color: white;
+        background: #374c91;
+        font-size: 15px;
+        margin-top: 17px;
+        -moz-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        -webkit-transition: all 1s ease-out; }
+        section .container-fluid .row #col-2 .col-2 .col-2_info button:hover {
+          background: #1c337e; }
+@media only screen and (min-width: 321px) and (max-width: 1025px) {
+  section .section-grid {
+    background: rgba(0, 0, 0, 0.8); } }
+section .section-grid .col-md-3 {
+  width: 24.8%;
+  height: 350px; }
+  @media only screen and (min-width: 321px) and (max-width: 1025px) {
+    section .section-grid .col-md-3 {
+      width: 47%;
+      margin-left: 270px; } }
+  @media only screen and (max-width: 1026px) {
+    section .section-grid .col-md-3 {
+      width: 45%;
+      margin-left: 295px; } }
+  @media only screen and (min-width: 1065px) and (max-width: 1599px) {
+    section .section-grid .col-md-3 {
+      width: 24.75%; } }
+section .section-grid #block1 {
+  background: url("../img/img4.png"); }
+  section .section-grid #block1:hover .block-hover {
+    display: block; }
+section .section-grid #block2 {
+  background: url("../img/img5.png");
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out; }
+  section .section-grid #block2:hover .block-hover {
+    display: block; }
+section .section-grid #block3 {
+  background: url("../img/img6.png");
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out; }
+  section .section-grid #block3:hover .block-hover {
+    display: block; }
+section .section-grid #block4 {
+  background: url("../img/img7.png");
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out; }
+  section .section-grid #block4:hover .block-hover {
+    display: block; }
+section .section-grid .block-hover {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  margin: 20px;
+  display: none;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  -moz-transition: all 5s ease-out;
+  -o-transition: all 5s ease-out;
+  -webkit-transition: all 5s ease-out; }
+  section .section-grid .block-hover .block-hover_title {
+    font-size: 18px;
+    margin-top: 33px; }
+  section .section-grid .block-hover .block-hover_text {
+    font-size: 14px;
+    width: 83%;
+    margin-top: 9px;
+    margin-left: 30px;
+    text-align: left; }
+    @media only screen and (min-width: 1065px) and (max-width: 1599px) {
+      section .section-grid .block-hover .block-hover_text {
+        width: 84%;
+        font-size: 13px; } }
+
+footer {
+  width: 100%;
+  height: 71px;
+  margin-top: 0;
+  text-align: center;
+  color: #787878;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  background: #1c1c1c; }
+  footer p {
+    position: relative;
+    top: 25px; }
+
+/*# sourceMappingURL=css.css.map */
