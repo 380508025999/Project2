@@ -80,7 +80,7 @@ header {
             @media only screen and (min-width: 321px) and (max-width: 1025px) {
               header .header-menu .header-menu_menu .menu .menu__list a {
                 top: 31px; } }
-          header .header-menu .header-menu_menu .menu .menu__list:focus .menu__drop {
+          header .header-menu .header-menu_menu .menu .menu__list a:focus .menu__drop {
             opacity: 1; }
         header .header-menu .header-menu_menu .menu .menu__drop {
           position: absolute;

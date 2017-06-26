@@ -32,9 +32,15 @@
 
         $("#cities").click(function () {
             $(".menu__list").css('background', "rgba(0, 0, 0, 0.3)");
-        }).focusout(function () {
+        })
+
+        $("#cities").click(function () {
+            $(".menu__drop").css('opacity', "1");
+        })
+            .focusout(function () {
             $(".menu__list").css('background', "none");
-        }).focusout(function () {
+        })
+            .focusout(function () {
             $(".menu__drop").css('opacity', "0");
         })
     });
