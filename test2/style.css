@@ -126,7 +126,7 @@ main {
   position: absolute;
   width: 36px; }
 
-.main-main-theport_menu-part1:hover .part1 {
+.main-main-theport_menu-part1:focus .part1 {
   display: block; }
 
 .part2 {
