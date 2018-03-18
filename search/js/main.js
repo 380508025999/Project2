@@ -92,15 +92,15 @@
 
             $(".eight-favourite-in").css('display', "block");
         });
-    $(".drop-down_menu").click(function () {
-        $(".header_list-burger").css('display', "block");
-    })
-
-        .focusout(function () {
-            $(".header_list-burger").css('display', "none");
+        $(".drop-down_menu").click(function () {
+            $(".header_list-burger").css('display', "block");
         })
 
-});
+            .focusout(function () {
+                $(".header_list-burger").css('display', "none");
+            })
+
+    });
     $(".search-option_online").click(function () {
 
         $(".offline").css('display', "none");
@@ -118,26 +118,26 @@
         $(".not-favorite").css('display', "none");
 
     });
-    $(function(){
+    $(function () {
 
-        $( "#slider-range" ).slider({
+        $("#slider-range").slider({
             range: true,
             min: 18,
             max: 50,
-            values: [ 18, 23 ],
+            values: [18, 23],
             step: 1,
-            slide: function( event, ui ) {
-                $( "#price" ).val(  ui.values[ 0 ] +" - "  + ui.values[ 1 ] );
+            slide: function (event, ui) {
+                $("#price").val(ui.values[0] + " - " + ui.values[1]);
             }
         });
-        $( "#price" ).val( $( "#slider-range" ).slider( "values", 0 ) +
-            " - " + $( "#slider-range" ).slider( "values", 1 ) );
+        $("#price").val($("#slider-range").slider("values", 0) +
+            " - " + $("#slider-range").slider("values", 1));
 
     });
-    $(function() {
+    $(function () {
 
-        $('.down').click(function() {
-            $('html, body').animate({scrollTop: 0},2000);
+        $('.down').click(function () {
+            $('html, body').animate({scrollTop: 0}, 2000);
             return false;
         })
 
